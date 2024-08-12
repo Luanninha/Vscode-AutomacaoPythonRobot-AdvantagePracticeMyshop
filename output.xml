@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.12.4 on win32)" generated="2024-08-06T14:57:38.434721" rpa="false" schemaversion="5">
+<suite id="s1" name="Testcarrinho" source="C:\Users\luana\OneDrive\Documentos\QUALITY ASSURANCE\FRONTEND\AUTOMACAO ROBOT PYTHON\Vscode-AutomacaoPythonRobot-AdvantagePracticeMyshop\testcarrinho.robot">
+<test id="s1-t1" name="Carrinho válido" line="6">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-08-06T14:57:39.219397" level="INFO">Opening browser 'Chrome' to base url 'http://www.automationpractice.pl/index.php'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-08-06T14:57:39.219397" elapsed="12.983130"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-08-06T14:57:52.202527" elapsed="0.177433"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-08-06T14:57:52.411913" level="INFO">Clicking element 'css=#header .nav .header_user_info &gt; a'.</msg>
+<arg>css=#header .nav .header_user_info &gt; a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-06T14:57:52.411913" elapsed="1.958171"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-08-06T14:57:54.370084" level="INFO">Typing text 'betina_fogaca@allianceconsultora.com.br' into text field 'id=email'.</msg>
+<arg>id=email</arg>
+<arg>${EMAIL_CREATE}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-06T14:57:54.370084" elapsed="0.918168"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-08-06T14:57:55.288252" level="INFO">Typing text 'senha123456' into text field 'id=passwd'.</msg>
+<arg>id=passwd</arg>
+<arg>${PASSWORD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-06T14:57:55.288252" elapsed="0.260118"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css=#SubmitLogin &gt; span</arg>
+<arg>timeout=15s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-08-06T14:57:55.548370" elapsed="0.070049"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-08-06T14:57:55.618419" level="INFO">Clicking element 'css=#SubmitLogin &gt; span'.</msg>
+<arg>css=#SubmitLogin &gt; span</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-06T14:57:55.618419" elapsed="1.601920"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-08-06T14:57:57.220339" level="INFO">Clicking element 'css=#block_top_menu &gt; ul &gt; li:nth-child(1) &gt; a'.</msg>
+<arg>css=#block_top_menu &gt; ul &gt; li:nth-child(1) &gt; a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-06T14:57:57.220339" elapsed="2.690322"/>
+</kw>
+<kw name="Double Click Element" owner="SeleniumLibrary">
+<msg time="2024-08-06T14:57:59.910661" level="INFO">Double clicking element 'css=#center_column &gt; ul &gt; li:nth-child(5) &gt; div &gt; div.left-block &gt; div &gt; a.product_img_link &gt; img'.</msg>
+<arg>css=#center_column &gt; ul &gt; li:nth-child(5) &gt; div &gt; div.left-block &gt; div &gt; a.product_img_link &gt; img</arg>
+<doc>Double clicks the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-06T14:57:59.910661" elapsed="0.501722"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-08-06T14:58:02.413114" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-08-06T14:58:00.412383" elapsed="2.000731"/>
+</kw>
+<kw name="Double Click Element" owner="SeleniumLibrary">
+<msg time="2024-08-06T14:58:02.413114" level="INFO">Double clicking element 'css=#color_11'.</msg>
+<msg time="2024-08-06T14:58:02.670539" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-25.png"&gt;&lt;img src="selenium-screenshot-25.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-08-06T14:58:02.670539" level="FAIL">Element with locator 'css=#color_11' not found.</msg>
+<arg>css=#color_11</arg>
+<doc>Double clicks the element identified by ``locator``.</doc>
+<status status="FAIL" start="2024-08-06T14:58:02.413114" elapsed="0.273047">Element with locator 'css=#color_11' not found.</status>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//span[text()="Add to cart"]</arg>
+<arg>timeout=15s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2024-08-06T14:58:02.686161" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>xpath=//span[text()="Add to cart"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-08-06T14:58:02.686161" elapsed="0.000000"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css=.continue &gt; span</arg>
+<arg>timeout=15s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2024-08-06T14:58:02.686161" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>css=.continue &gt; span</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-08-06T14:58:02.686161" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>xpath=//*[@id="block_top_menu"]/ul/li[2]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-08-06T14:58:02.686161" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>css=#center_column &gt; ul &gt; li:nth-child(2) &gt; div &gt; div.left-block &gt; div &gt; a.product_img_link &gt; img</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-08-06T14:58:02.686161" elapsed="0.000000"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>id=color_24</arg>
+<arg>timeout=15s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2024-08-06T14:58:02.686161" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>id=color_24</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-08-06T14:58:02.686161" elapsed="0.000000"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css=.exclusive &gt; span</arg>
+<arg>timeout=15s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2024-08-06T14:58:02.686161" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>css=.exclusive &gt; span</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-08-06T14:58:02.686161" elapsed="0.000000"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css=.continue &gt; span</arg>
+<arg>timeout=15s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2024-08-06T14:58:02.686161" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>css=.continue &gt; span</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-08-06T14:58:02.686161" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>xpath=//*[@id="block_top_menu"]/ul/li[3]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-08-06T14:58:02.686161" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>css=#center_column &gt; ul &gt; li &gt; div &gt; div.left-block &gt; div &gt; a.product_img_link &gt; img</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-08-06T14:58:02.686161" elapsed="0.000000"/>
+</kw>
+<kw name="Element Should Contain" owner="SeleniumLibrary">
+<arg>css=#availability_value</arg>
+<arg>Out of stock</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<status status="NOT RUN" start="2024-08-06T14:58:02.686161" elapsed="0.000000"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css=[title="View my shopping cart"]</arg>
+<arg>timeout=15s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2024-08-06T14:58:02.686161" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>css=[title="View my shopping cart"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-08-06T14:58:02.686161" elapsed="0.000000"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css=.cart_navigation &gt; .button &gt; span</arg>
+<arg>timeout=15s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2024-08-06T14:58:02.686161" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>css=.cart_navigation &gt; .button &gt; span</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-08-06T14:58:02.686161" elapsed="0.000000"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css=.cart_navigation &gt; .button &gt; span</arg>
+<arg>timeout=15s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2024-08-06T14:58:02.686161" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>css=.cart_navigation &gt; .button &gt; span</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-08-06T14:58:02.686161" elapsed="0.000000"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>id=cgv</arg>
+<arg>timeout=15s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2024-08-06T14:58:02.686161" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>id=cgv</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-08-06T14:58:02.686161" elapsed="0.000000"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css=.cart_navigation &gt; .button &gt; span</arg>
+<arg>timeout=15s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2024-08-06T14:58:02.686161" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>css=.cart_navigation &gt; .button &gt; span</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-08-06T14:58:02.686161" elapsed="0.000000"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css=.cheque</arg>
+<arg>timeout=15s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2024-08-06T14:58:02.686161" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>css=.cheque</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-08-06T14:58:02.686161" elapsed="0.000000"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css=#cart_navigation &gt; .button &gt; span</arg>
+<arg>timeout=15s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2024-08-06T14:58:02.686161" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>css=#cart_navigation &gt; .button &gt; span</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-08-06T14:58:02.686161" elapsed="0.000000"/>
+</kw>
+<kw name="Element Should Contain" owner="SeleniumLibrary">
+<arg>css=.alert</arg>
+<arg>Your order on My Shop is complete.</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<status status="NOT RUN" start="2024-08-06T14:58:02.686161" elapsed="0.000000"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2024-08-06T14:58:02.686161" elapsed="0.000000"/>
+</kw>
+<doc>Este caso de teste verifica o fluxo de carrinho de compras válido</doc>
+<tag>Carrinho</tag>
+<status status="FAIL" start="2024-08-06T14:57:39.203809" elapsed="23.482352">Element with locator 'css=#color_11' not found.</status>
+</test>
+<status status="FAIL" start="2024-08-06T14:57:38.442816" elapsed="24.258963"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">Carrinho</stat>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Testcarrinho">Testcarrinho</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
